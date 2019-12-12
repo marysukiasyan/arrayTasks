@@ -167,7 +167,48 @@ public class Main {
             }
         }
         System.out.println(count);
+
+        System.out.println();
+        System.out.println("11th -----------------------");
+
+        //11th task if b exists in string
+
+        String str11="wfsfb";
+        for (int i = 0; i < str11.length(); i++){
+            if(str11.charAt(i)=='b'){
+                System.out.println("Yes");
+                break;
+            }
+            else if(i==str11.length()-1 & str11.charAt(i)!='b') {
+                System.out.println("No");
+
+            }
+        }
+
+        System.out.println();
+        System.out.println("12th -----------------------");
+
+        //12th task
+
+        int[] arr12={2, 5, 8, 9, 22, 16, 64};
+            int count12=0;
+        for (int i = 0; i < arr12.length; i++) {
+            if(arr12[i] > 0 && (arr12[i] & arr12[i]-1)==0){
+                count12++;
+        }
+
+        }
+        System.out.println(count12);
+
+
+
         
+
+
+
+
+
+
 
 
         }
@@ -175,17 +216,4 @@ public class Main {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
