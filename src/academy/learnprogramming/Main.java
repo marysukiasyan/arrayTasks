@@ -120,11 +120,62 @@ public class Main {
 
         double[] arr9 = {2.5, 45.7, 0.7, 56.3, 7.9 };
         for (int i = 0; i < arr9.length; i++) {
-            
+            for(int c=0; c<arr9.length-i-1; c++) {
+                if (arr9[c] > arr9[c + 1]) {
+                    double current;
+                    current = arr9[c + 1];
+                    arr9[c + 1] = arr9[c];
+                    arr9[c] = current;
+                }
+            }
+
+        }
+        for (int i = 0; i < arr9.length; i++) {
+            System.out.print(arr9[i] + " ");
         }
 
+        System.out.println();
+        System.out.println("9th -----------------------");
+
+        //9th task sort descending
+
+        for(int i=0; i < arr9.length; i++) {
+            for (int n = 0; n < arr9.length - i - 1; n++) {
+                if (arr9[n] < arr9[n + 1]) {
+                    double current;
+                    current = arr9[n];
+                    arr9[n] = arr9[n + 1];
+                    arr9[n + 1] = current;
+                }
+            }
+        }
+
+            for (int i = 0; i < arr9.length; i++) {
+                System.out.print(arr9[i] + " ");
+            }
+
+        System.out.println();
+        System.out.println("10th -----------------------");
+
+        //10th task number of a from string
+
+        String str = "sgdhaaajhdaa";
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'a') {
+                count++;
+            }
+        }
+        System.out.println(count);
+        
+
+
+        }
+
+
+
     }
-}
+
 
 
 
